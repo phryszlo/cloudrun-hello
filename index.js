@@ -3,7 +3,7 @@ const app = express();
 
 app.get('/', (req, res) => {
   const name = process.env.NAME || 'World';
-  res.send(`Hello ${name}!`);
+  res.send(`Hey there, ${name}!`);
 });
 
 app.get('/smurf', (req, res) => {
